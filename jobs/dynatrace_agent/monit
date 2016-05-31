@@ -1,0 +1,5 @@
+check process dynatrace_agent
+  with pidfile /var/vcap/sys/run/dynatrace_agent/dynatrace_agent.pid
+  start program "/var/vcap/jobs/dynatrace_agent/bin/dynatrace_agent_ctl start"
+  stop program "/var/vcap/jobs/dynatrace_agent/bin/dynatrace_agent_ctl stop"
+  group vcap

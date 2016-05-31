@@ -1,0 +1,17 @@
+---
+name: dynatrace_agent
+
+templates:
+  dynatrace_agent_ctl.sh.erb: bin/dynatrace_agent_ctl
+  dthostagent.ini.erb: config/dthostagent.ini
+
+packages:
+  - dynatrace_agent
+
+properties:
+  dynatrace_agent.collector_ip:
+    description: "Host IP of Dynatrace collector"
+    default: localhost
+  dynatrace_agent.name:
+  	description: "Name of the agent. e.g. <name>_<systemProfile>"
+  	default: Name
