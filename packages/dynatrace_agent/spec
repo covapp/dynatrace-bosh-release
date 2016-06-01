@@ -4,4 +4,4 @@ name: dynatrace_agent
 dependencies: []
 
 files:
-- dynatrace_agent/dynatrace-agent-6.2.tar.gz
+- dynatrace_agent/dynatrace-6.2.tar.gz
